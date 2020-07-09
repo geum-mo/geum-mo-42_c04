@@ -1,17 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_base.c                                   :+:      :+:    :+:   */
+/*   ft_atoi_base.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gekang <gekang@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/09 20:56:42 by gekang            #+#    #+#             */
-/*   Updated: 2020/07/10 08:08:23 by gekang           ###   ########.fr       */
+/*   Created: 2020/07/10 08:11:48 by gekang            #+#    #+#             */
+/*   Updated: 2020/07/10 08:27:17 by gekang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
+
+int		ft_is_space(char c)
+{
+	return (c == '\t' || c == '\n' || c == '\v' \
+	|| c == '\f' || c == '\r' || c == ' ') ? 1 : 0;
+}
 
 void	ft_putchar(char c)
 {
@@ -41,7 +47,7 @@ int ft_check_base(char *base)
 		return (0);
 	while (base)
 	{
-		if (base[i] == '-' || base[i] == '+')
+		if (base[i] == '-' || base[i] == '+' || ft_is_space(base[i]))
 			return (0);
 		while (base)
 		{
