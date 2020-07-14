@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gekang <gekang@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gekang <gekang@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/09 16:48:30 by gekang            #+#    #+#             */
-/*   Updated: 2020/07/09 18:32:41 by gekang           ###   ########.fr       */
+/*   Updated: 2020/07/14 10:05:08 by gekang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
 void	ft_putchar(char c)
 {
